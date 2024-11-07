@@ -11,109 +11,14 @@ git clone https://github.com/purbahotles/todo-app.git
 cd todo-app
 ```
 
-## Installation Guide
-
-This guide will walk you through the process of setting up both the frontend and backend for this project, as well as running the project using Docker.
-Frontend Installation
-
-# Versioning Information (Frontend)
+## Verify Directories: Make sure the frontend and backend directories exist at the same level as your docker-compose.yml file.
 ```bash
-    Node: v20.11.0
-    NPM Packages:
-      @nuxtjs/axios@5.13.6
-      @nuxtjs/tailwindcss@6.12.2
-      @pinia/nuxt@0.7.0
-      @types/node@22.9.0
-      autoprefixer@10.4.20
-      axios@1.7.7
-      defu@6.1.4
-      nitropack@2.10.2
-      nuxt@3.14.0
-      pinia@2.2.6
-      postcss@8.4.47
-      tailwindcss@3.4.14
-      vue-router@4.4.5
-      vue@3.5.12
+/todo-app
+├── docker-compose.yml
+├── frontend
+├── backend
+├── README.md
 ```
-
-## Steps to Install Frontend
-
-Clone the repository:
-```bash
-git clone https://github.com/purbahotles/todo-app.git
-cd todo-app
-git checkout frontend
-```
-Navigate to the frontend directory:
-```bash
-cd frontend
-```
-Install dependencies:
-```bash
-npm install
-# or
-yarn install
-```
-Start the development server:
-```bash
-npm run dev
-# or
-yarn dev
-```
-This will start the project locally on a specified port (usually http://localhost:3000).
-Backend Installation
-
-# Versioning Information (Backend)
-
-    Node: v20.11.0
-    NPM Packages:
-      bcrypt@5.1.1
-      body-parser@1.20.3
-      cors@2.8.5
-      dotenv@16.4.5
-      express@4.21.1
-      jsonwebtoken@9.0.2
-      sequelize@6.37.5
-      sqlite3@5.1.7
-      winston@3.16.0
-
-## Steps to Install Backend
-
-Clone the repository:
-```bash
-git clone https://github.com/purbahotles/todo-app.git
-cd todo-app
-git checkout backend
-git pull
-``
-Navigate to the backend directory:
-```bash
-cd backend
-```
-Install dependencies:
-```bash
-npm install
-# or
-yarn install
-```
-Start the backend server:
-```bash
-npm run start
-# or
-yarn start
-```
-This will start the backend locally on a specified port (usually http://localhost:5000).
-SQLite Database
-
-# To manage your SQLite database, follow these steps:
-
-    Open a Database Management Tool: Use any SQLite database management tool like Beekeeper Studio or DB Browser for SQLite.
-
-# Add a Connection:
-
-    Choose SQLite as the database type.
-    For the Database File, browse to the location of database.sqlite and select it.
-    Click Connect.
 
 ## Docker Installation
 
